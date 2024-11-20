@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Averiguar Paleta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Averiguar Paleta</h1>
+        <form id="paletteForm">
+            <label for="temperature">Temperatura:</label>
+            <select id="temperature" name="temperature">
+                <option value="Quente">Quente</option>
+                <option value="Frio">Frio</option>
+            </select>
+
+            <label for="intensity">Intensidade:</label>
+            <select id="intensity" name="intensity">
+                <option value="Suave">Suave</option>
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Média Alta">Média Alta</option>
+                <option value="Altíssima">Altíssima</option>
+            </select>
+
+            <label for="depth">Profundidade:</label>
+            <select id="depth" name="depth">
+                <option value="Suave">Suave</option>
+                <option value="Clara">Clara</option>
+                <option value="Média">Média</option>
+                <option value="ClaraM">Clara média</option>
+                <option value="Profundo">Profundo</option>
+            </select>
+
+            <button type="button" id="checkPalette">Verificar Paleta</button>
+            <button type="button" id="clear">limpar</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
